@@ -1,0 +1,10 @@
+.par{
+    color: rgb(0, 145, 19);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(195, 255, 177);
+}
+.impar{
+    color: rgb(0, 165, 187);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(124, 233, 252);
+}

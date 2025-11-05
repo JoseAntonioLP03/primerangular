@@ -1,0 +1,33 @@
+<div>
+  <h1
+    style="
+      color: steelblue;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: oblique;
+      background-color: beige;
+    "
+  >
+    Forms Binding Model
+  </h1>
+  <h3 style="color: crimson">{{ mensaje }}</h3>
+  <!-- UN FOMRULARIO SIEMPRE DEBE TENER UN ID DE ANGULAR CON LA IGUALDAD A ngForm -->
+  <form #userForm="ngForm" (ngSubmit)="recibirDatos()">
+    <!-- LOS CONTROLES DEBEN TENER UNA ETIQUETA ngModel APUNTANDO AL ID DE ANGULAR -->
+    <!-- PARA INDICAR EL MODEL BINDING [(ngModel)]="Mi modelo" -->
+    <label>Nombre</label>
+    <input type="text" name="cajanombre" #cajanombre="ngModel" [(ngModel)]="user.nombre" /><br />
+    <label>Apellidos</label>
+    <input
+      type="text"
+      name="cajaapellidos"
+      #cajaapellidos="ngModel"
+      [(ngModel)]="user.apellidos"
+    /><br />
+    <label>Edad</label>
+    <input type="number" name="cajaedad" #cajaedad="ngModel" [(ngModel)]="user.edad" /><br />
+    <button>Enviar Datos</button>
+  </form>
+  <h2 style="color: rgb(248, 189, 111)">
+    Nombre: {{ user.nombre }} , Apellidos: {{ user.apellidos }} , Edad: {{ user.edad }}
+  </h2>
+</div>

@@ -1,0 +1,12 @@
+.rainbow-text {
+    /* Define el degradado con los colores del arcoíris en orden */
+    background: linear-gradient(to right, red, red, yellow, yellow, yellow, red, red);
+    /* Recorta el fondo para que solo sea visible en el texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Prefijo para compatibilidad con navegadores WebKit */
+    /* Hace que el color del texto sea transparente para revelar el fondo */
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Prefijo alternativo */
+    font-size: 20; /* Tamaño de fuente para que el efecto sea visible */
+    display: inline-block; /* Asegura que la longitud del degradado coincida con la del texto */
+}
